@@ -44,6 +44,7 @@ The dataset contains retail sales transactions, including:
 - CASE Statements
 - Common Table Expressions (CTEs)
 - JOINS
+- HAVING
 
 ## Project Structure
 
