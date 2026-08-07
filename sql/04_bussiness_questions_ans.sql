@@ -49,6 +49,51 @@ GROUP BY category
 ORDER BY highest_total_quantity DESC
 LIMIT 1;
 
+--6. Monthly Sales Performance
+--Write a SQL query to calculate the total sales for each month and year, ordered from highest to lowest revenue.
+SELECT 
+	EXTRACT(MONTH FROM sale_date) AS month,
+	EXTRACT (YEAR FROM sale_date) AS year,
+	SUM(total_sale) AS total_revenue
+FROM retail_sales
+GROUP BY month, year
+ORDER BY total_revenue DESC;
+
+--7. High-Value Transactions
+--Write a SQL query to retrieve all transactions where the total sale amount is above the overall average transaction value.
+SELECT 
+	*,
+	(SELECT ROUND(AVG(total_sale) :: NUMERIC, 2) FROM retail_sales) AS avg_total_sale
+FROM retail_sales
+WHERE total_sale > (SELECT AVG(total_sale) FROM retail_sales);
+
+--8. Customer Purchase Frequency
+--Write a SQL query to find customers who made more than five purchases and display the number of transactions for each customer.
+
+SELECT customer_id, COUNT(*) AS transaction_count
+FROM retail_sales
+GROUP BY customer_id
+HAVING COUNT(8) > 5
+ORDER BY transaction_count DESC;
+
+--9. Peak Shopping Hours
+--Write a SQL query to identify the hour of the day that recorded the highest number of sales transactions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
