@@ -19,7 +19,8 @@ SELECT
 	SUM(total_sale) AS total_revenue,
 	category
 FROM retail_sales
-GROUP BY category;
+GROUP BY category
+ORDER BY total_revenue DESC;
 
 --3. Customer Spending Pattern
 -- Write a SQL query to calculate the total amount spent by each customer and display the top 10 highest-spending customers.
@@ -73,15 +74,32 @@ WHERE total_sale > (SELECT AVG(total_sale) FROM retail_sales);
 SELECT customer_id, COUNT(*) AS transaction_count
 FROM retail_sales
 GROUP BY customer_id
-HAVING COUNT(8) > 5
+HAVING COUNT(*) > 5
 ORDER BY transaction_count DESC;
 
 --9. Peak Shopping Hours
 --Write a SQL query to identify the hour of the day that recorded the highest number of sales transactions.
+SELECT EXTRACT(HOUR FROM sale_time) AS hour, COUNT(transactions_id) AS transaction_count
+FROM retail_sales
+GROUP BY hour
+ORDER BY transaction_count DESC
+LIMIT 1;
 
-
-
-
+--10. Sales Shift Analysis
+--Write a SQL query to categorize each transaction into one of the following shifts based on the sale time and calculate both the total number of transactions and total revenue for each shift.
+	--Morning: before 12:00
+	--Afternoon: 12:00 to 16:59
+	--Evening: 17:00 onwards
+SELECT 
+	CASE WHEN EXTRACT(HOUR FROM sale_time) < 12 THEN 'Morning'
+		WHEN EXTRACT(HOUR FROM sale_time) < 17 THEN 'Afternoon'
+		ELSE 'Evening' 
+	END AS Shift,
+	COUNT(transactions_id) AS total_transactions, 
+	SUM(total_sale) AS total_revenue
+FROM retail_sales
+GROUP BY Shift
+ORDER BY Shift;
 
 
 
