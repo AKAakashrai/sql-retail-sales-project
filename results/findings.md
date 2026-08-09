@@ -8,75 +8,147 @@ This analysis was conducted on the retail sales dataset to identify sales patter
 
 ### 1. Daily Revenue
 
-The highest daily revenue was generated on 2022-01-01, with total sales of £2150. This helps identify days with particularly high or low sales performance.
+Question:
+What was the total revenue generated on each sale date?
 
-Key insight: The highest-revenue dates can be used to investigate factors such as customer demand, promotions, or seasonal trends.
+Actual Result:
+The highest daily revenue was generated on 2022-01-01, with total sales of £2,150.
+
+Business Interpretation:
+2022-01-01 was the strongest sales day in the dataset. This could indicate higher customer demand or seasonal purchasing activity on that date.
+
+---
 
 ### 2. Highest Revenue Category
 
-Electronics generated the highest total revenue, with £313810 in sales.
+Question:
+Which product category generated the highest total revenue?
 
-Key insight: The highest-revenue category represents the strongest contributor to overall business revenue and may deserve greater inventory and marketing attention.
+Actual Result:
+Electronics generated the highest total revenue, with £313,810 in sales.
+
+Business Interpretation:
+Electronics was the strongest contributor to overall revenue. The business could consider maintaining sufficient inventory and focusing marketing efforts on this category.
+
+---
 
 ### 3. Top 10 Customers by Spending
 
-Customer with customer_id : 3 was the highest-spending customer, generating £38440 in total sales.
-Key insight: These customers represent the highest-value customers in the dataset and could be potential targets for loyalty programmes and personalised offers.
+Question:
+Who were the top 10 customers based on total spending?
+
+Actual Result:
+Customer 3 was the highest-spending customer, generating £38,440 in total sales.
+
+Business Interpretation:
+Customer 3 represents a high-value customer. Customers with high spending could be targeted with loyalty programmes, personalised offers, and retention strategies.
+
+---
 
 ### 4. Average Purchase Value by Gender
 
-The average purchase value was £457.62 for Female and £455.43 for Male. Female had the higher average purchase value.
+Question:
+What was the average purchase value for male and female customers?
 
-Key insight: Comparing the averages helps identify whether there is a difference in purchasing value between the two customer groups.
+Actual Result:
+The average purchase value was £457.62 for female customers and 455.43 for male customers. Female customers had the slightly higher average purchase value.
+
+Business Interpretation:
+The difference between the two groups is relatively small, suggesting that average transaction values were similar across genders. However, the result can still help when analysing customer purchasing behaviour.
+
+---
 
 ### 5. Most Popular Product Category
 
-The total quantity of products sold was calculated for each category.
+Question:
+Which product category sold the highest total quantity of products?
 
-Key insight: Clothing was the most popular category, with 1785 products sold.
+Actual Result:
+Clothing was the most popular category based on quantity sold, with 1,785 products sold.
+
+Business Interpretation:
+Clothing had the highest product demand by quantity. The business should consider ensuring adequate stock levels for this category to avoid potential stock shortages.
+
+---
 
 ### 6. Monthly Sales Performance
 
-Sales were grouped by month and year to compare revenue across different periods.
+Question:
+Which month generated the highest total sales?
 
-**Key insight:** This analysis helps identify the strongest-performing months and can reveal potential seasonal patterns in sales.
+Actual Result:
+December 2022 was the highest-performing month, generating £72,880 in total sales.
+
+Business Interpretation:
+December was the strongest sales month in the dataset. This may indicate increased customer spending during the end-of-year period, suggesting an opportunity for seasonal promotions and increased inventory.
+
+---
 
 ### 7. High-Value Transactions
 
-Transactions with a total sale amount greater than the overall average transaction value were identified.
+Question:
+How many transactions had a total sale amount above the overall average transaction value?
 
-**Key insight:** These transactions represent purchases that generated above-average revenue and can help the business understand its higher-value sales activity.
+Actual Result:
+The overall average transaction value was £456.54, and 700 transactions had a value above this average.
+
+Business Interpretation:
+A significant number of transactions generated above-average revenue. Understanding the products and categories associated with these transactions could help the business identify opportunities to increase average purchase value.
+
+---
 
 ### 8. Customer Purchase Frequency
 
-Customers who made more than five purchases were identified and ranked according to their transaction frequency.
+Question:
+Which customers made more than five purchases?
 
-**Key insight:** These frequent customers demonstrate stronger engagement with the business and could be targeted with customer-retention or loyalty strategies.
+Actual Result:
+134 customers made more than five purchases. The most frequent customer made 76 transactions.
+
+Business Interpretation:
+A group of customers showed strong purchasing frequency. These customers could be valuable targets for loyalty programmes and repeat-purchase campaigns.
+
+---
 
 ### 9. Peak Shopping Hours
 
-Transactions were grouped by hour to identify the time of day with the highest number of sales.
+Question:
+Which hour of the day recorded the highest number of transactions?
 
-**Key insight:** Identifying peak shopping hours can help the business optimise staffing, inventory availability, and promotional activities.
+Actual Result:
+The busiest shopping hour was 19:00, with 232 transactions.
+
+Business Interpretation:
+19:00 was the peak shopping hour. The business could consider increasing staff availability, ensuring sufficient stock, and running targeted promotions around this period.
+
+---
 
 ### 10. Sales Shift Analysis
 
-Transactions were divided into Morning, Afternoon, and Evening shifts based on the sale time. The number of transactions and total revenue were then calculated for each shift.
+Question:
+Which shift generated the highest number of transactions and revenue?
 
-**Key insight:** Comparing transaction volume and revenue across shifts helps identify the most productive time period of the day.
+Actual Result:
+The Evening shift generated the highest revenue, with £572,420 from 1,275 transactions.
+
+Business Interpretation:
+The evening period was the strongest-performing shift in terms of revenue and transaction volume. The business could allocate additional staff and maintain higher stock availability during evening hours.
+
+---
 
 ## Conclusion
 
 The analysis provides an overview of the business's sales performance, customer behaviour, product popularity, and shopping patterns.
 
-The key areas identified through the analysis include:
+The main findings show that:
 
-- Daily and monthly revenue patterns
-- Highest-performing product categories
-- High-value and frequent customers
-- Differences in average purchase value by gender
-- Most popular products based on quantity sold
-- Peak shopping hours
-- Revenue and transaction performance across different shifts
+- Electronics generated the highest total revenue.
+- Clothing had the highest quantity of products sold.
+- December 2022 was the highest-performing month.
+- Customer 3 was the highest-spending customer.
+- 19:00 was the busiest shopping hour.
+- The Evening shift generated the highest revenue.
+- 134 customers made more than five purchases.
+- Female customers had a slightly higher average purchase value than male customers.
 
-These findings can help the business make more informed decisions regarding inventory management, customer retention, staffing, and sales strategy.
+These findings can help the business make more informed decisions regarding inventory management, customer retention, staffing, seasonal promotions, and sales strategy.

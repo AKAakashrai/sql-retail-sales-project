@@ -31,6 +31,7 @@ The dataset contains retail sales transactions, including:
 
 - PostgreSQL
 - pgAdmin 4
+- VSCode
 - Git
 - GitHub
 
@@ -40,6 +41,7 @@ The dataset contains retail sales transactions, including:
 - WHERE
 - GROUP BY
 - ORDER BY
+- LIMIT
 - Aggregate Functions
 - CASE Statements
 - Common Table Expressions (CTEs)
